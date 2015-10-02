@@ -8,6 +8,13 @@ import java.util.ArrayList;
 public class CodenameGenerator {
 
 	public static  String getCodename() throws IOException {
+		/*
+		This method randomly generates a MGS-style codename. Will be implemeted in 
+		MGSV Staff Management project
+		*/
+		
+		
+		
 		String fullName = "";
 		//create two arraylists
 		ArrayList<String> pre = new ArrayList<>();
@@ -37,18 +44,6 @@ public class CodenameGenerator {
 		}
 		
 		
-		/* Prints out both full arraylists. not needed, just here for testing
-		for(int i = 0; i < pre.size(); i++){
-			System.out.println(pre.get(i));
-		}
-		System.out.println("\n\n\n\nActual Names");
-		for(int i = 0; i < name.size(); i++){
-			System.out.println(name.get(i));
-		}
-		*/
-		
-	
-		
 		//generate random indexes for both arraylists
 		int randPre = (int)Math.floor(Math.random()*pre.size());
 		int randName = (int)Math.floor(Math.random()*pre.size());
@@ -60,7 +55,7 @@ public class CodenameGenerator {
 
 	
 	public static void main(String[] args) throws IOException{
-	//	System.out.println(System.getProperty("adj.txt"));
+		//test main just calls the function
 		String t;
 		t = getCodename();
 		
